@@ -6,7 +6,7 @@ spec:
   tls:
   - secretName: first-secret-name
   rules:
-  - host: app-cs580k-jaiho.appspot.com
+  - host: 35.224.50.168
     http:
       paths:
       - backend:
