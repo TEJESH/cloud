@@ -13,6 +13,7 @@ spec:
       port: 3000
       targetPort: 3000
   type: LoadBalancer
+  loadBalancerIP: 35.238.107.43
 ---
 apiVersion: apps/v1
 kind: Deployment
