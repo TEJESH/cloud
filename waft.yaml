@@ -5,8 +5,7 @@ metadata:
 spec:
   selector:
     app: waft
-  type: LoadBalancer
-  loadBalancerIP: 35.224.50.168
+ 
     
   ports:
     - name: https
