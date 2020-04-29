@@ -6,6 +6,10 @@ metadata:
     kubernetes.io/ingress.global-static-ip-name: waft-container
   labels:
     app: waft
+spec:
+  backend:
+    serviceName: waft-service
+    servicePort: 3000
 
 ---
 apiVersion: v1
