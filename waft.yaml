@@ -6,10 +6,6 @@ spec:
   selector:
     app: waft
   ports:
-    - name: http
-      protocol: TCP
-      port: 3000
-      targetPort: 3000
     - name: https
       protocol: TCP
       port: 3000
