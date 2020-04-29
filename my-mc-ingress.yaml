@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Ingress
+metadata:
+  name: waft-ingress
+spec:
+  tls:
+  - secretName: first-secret-name
+  rules:
+  - host: app-cs580k-jaiho.appspot.com
+    http:
+      paths:
+      - backend:
+          serviceName: waft-service
+          servicePort: 3000
+ 
