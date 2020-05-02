@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: waaft
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: waaft-ip
+    kubernetes.io/ingress.global-static-ip-name: waft-ip
   labels:
     app: waaft
 spec:
