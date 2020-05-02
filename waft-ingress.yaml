@@ -1,14 +1,14 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: waft
+  name: waaft
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: waft-ip
+    kubernetes.io/ingress.global-static-ip-name: waaft-ip
   labels:
-    app: waft
+    app: waaft
 spec:
   backend:
-    serviceName: waft-backend
+    serviceName: waaft-backend
     servicePort: 3000
 
 
@@ -16,13 +16,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: waft-backend
+  name: waaft-backend
   labels:
-    app: waft
+    app: waaft
 spec:
   type: NodePort
   selector:
-    app: waft
+    app: waaft
     tier: web
   ports:
   - port: 3000
