@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: waft-service
+  name: waaft-service
 spec:
   selector:
-    app: waft
+    app: waaft
  
     
   ports:
@@ -18,20 +18,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: waft-deploy
+  name: waaft-deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: waft
+      app: waaft
   template:
     metadata:
       labels:
-        app: waft
+        app: waaft
     spec:
       containers:
-        - name: waft
-          image: tejesh92/waft:2.0.0
+        - name: waaft
+          image: waaft/waaft:1.0.0
           ports:
             - containerPort: 3000
           imagePullPolicy: Always
