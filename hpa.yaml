@@ -5,8 +5,8 @@ metadata:
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
-    kind: service
-    name: waft-service
+    kind: Deployment
+    name: waft-deploy
   minReplicas: 1
   maxReplicas: 10
   metrics:
