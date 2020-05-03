@@ -34,4 +34,8 @@ spec:
           image: waaft/waaft:1.0.0
           ports:
             - containerPort: 3000
+          resources: 
+          limits: 
+            cpu: 250m 
+            memory: 32Mi  
           imagePullPolicy: Always
