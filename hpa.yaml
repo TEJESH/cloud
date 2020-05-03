@@ -1,14 +1,14 @@
 apiVersion: autoscaling/v2beta1 
 kind: HorizontalPodAutoscaler
 metadata: 
-  name: myhpa 
+  name: waaft 
 spec: 
   maxReplicas: 10 
   minReplicas: 1 
   scaleTargetRef: 
     apiVersion: apps/v1 
     kind: Deployment 
-    name: myhpa 
+    name: waaft-deploy 
   metrics: 
   - type: Resource 
     resource: 
