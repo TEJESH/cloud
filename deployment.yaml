@@ -1,23 +1,23 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata: 
-  name: fib 
+  name: waft-deploy 
   labels: 
-    app: fib 
+    app: waft 
 spec: 
   selector: 
     matchLabels: 
-      app: fib 
+      app: waft 
   template: 
     metadata: 
       labels: 
-        app: fib 
+        app: waft 
     spec: 
       containers: 
-      - name: fib 
-        image: errm/fib 
+      - name: waft 
+        image: ksvartak24/waaft 
         ports: 
-        - containerPort: 9292 
+        - containerPort: 3000 
         resources: 
           limits: 
             cpu: 250m 
