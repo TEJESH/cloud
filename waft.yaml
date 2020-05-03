@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
         - name: waaft
-          image: waaft/waaft:1.0.0
+          image: waaft/waaft:3.0.0
           ports:
             - containerPort: 3000
           resources: 
